@@ -1,0 +1,761 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #f0e8e8;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+header a h1{
+    color: white;
+    font-weight: normal;
+    font-size: 30pt;
+    font-family: 'comfortaa';
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li hr{
+    width: 0%;
+    background-color: white;
+    color: white;
+    height: 0.06rem;
+    border: none;
+    outline: none;
+    transition-duration: .4s;
+}
+nav ul li:hover hr{
+    width: 100%;
+}
+nav ul li a{
+    color: white;
+    font-size: 18pt;
+    font-family: 'comfortaa';
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 12px 0;
+    margin-bottom: 50px;
+    background-image: url(../img/Fenda_bimbe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}  
+.containerDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 250px;
+}
+.containerDown h1{
+    margin-bottom: 40px;
+    font-size: 70pt;
+    font-family: 'Questrial';
+    color: white;
+    text-align: center;
+    transition-duration: .2s;
+}
+.containerDown h1:hover{
+    color: transparent;
+    -webkit-text-stroke: 0.00001rem white;
+}
+.containerDown a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 70px;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: "Questrial";
+    color: white;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition-duration: .3s;
+}
+.provincias{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    padding: 30px 0 10px 120px;
+    transform: translateY(-80rem);
+    overflow: hidden;
+    transition-duration: .5s;
+}
+.close{
+    font-size: 25pt;
+}
+.close p:hover{
+    cursor: pointer;
+}
+.containerProvincias{
+    align-self: center;
+}
+.provinciasSeparate{
+    display: flex;
+    transform: translateX(-79rem);
+    transition-duration: .8s;
+    gap: 30px;
+}
+.provinciasCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 8px;
+    border-bottom: 0.12rem solid;
+    border-right: 0.12rem solid;
+    border-bottom-right-radius: 12px;
+}
+.provinciasCard a{
+    color: black;
+    font-size: 16pt;
+}
+.provinciasCard p{
+    color: black;
+    font-size: 16pt;
+}
+main{
+    width: 100%;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.welcome h2{
+    font-size: 50pt;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.welcome p{
+    font-size: 15pt;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+.welcomeLine{
+    width: 27%;
+    background-color: black;
+    color: black;
+    height: 0.1rem;
+    border: none;
+    outline: none;
+}
+.quemSomos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 350px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+.visao, .missao, .valores{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+.visao img, .missao img, .valores img{
+    width: 80px;
+    height: 80px;
+}
+.visao h3, .missao h3, .valores h3{
+    font-size: 19pt;
+    margin: 20px 0;
+}
+.visao p, .missao p, .valores p{
+    color: #ababab;
+    text-align: center;
+    font-size: 12pt;
+}
+.slider-container .containers{
+    padding: 10px 15px;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img {
+    display: block;
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+.H1principal, .H1hoteis{
+    font-size: 50pt;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    text-align: center;
+}
+.H1hoteis{
+    font-size: 30pt;
+    margin: 40px 0 25px 0;
+    padding-left: 80px;
+    text-align: start;
+}
+.topHotels{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 500px 500px;
+    padding: 0 70px;
+    gap: 20px;
+}
+.backSettings{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow: hidden;
+}
+.backIntercontinental{
+    background-image: url(../img/hotelIntercontinental.avif);
+    grid-column: 1 / 3;
+    transition: .9s;
+}
+.hotelsDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30rem);
+    transition: .9s;
+}
+.hotelsDesc h1{
+    font-size: 35pt;
+    text-align: center;
+    color: white;
+}
+.hotelsDesc a{
+    font-size: 15pt;
+    text-align: center;
+    color: white;
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.stars i{
+    font-size: 17pt;
+    color: yellow;
+}
+.backSettings:hover{
+    opacity: 0.9;
+}
+.backSettings:hover .hotelsDesc{
+    transform: translateY(-0.1rem);
+}
+.backSerraChela{
+    background-image: url(../img/serra_chela.jpg);
+}
+.backMilCidades{
+    background-image: url(../img/aparthotel_mil_cidades.jpg);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.backPalancaHotel{
+    background-image: url(../img/Palanca_hotel.jpg);
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+.random{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    height: 92vh;
+    background-color: rgb(32, 27, 27);
+    margin: 50px 0;
+}
+.randomUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 110px;
+}
+.randomUp h2{
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.randomUp p{
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+}
+.randomDown{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px;
+    gap: 50px;
+}
+.randomCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.randomCard i{
+    font-size: 30pt;
+    color: rgb(36, 211, 36);
+}
+.randomCard span{
+    color: rgb(36, 211, 36);
+    font-size: 17pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.randomCard p{
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 2rem;
+}
+.agencias{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 600px;
+    align-items: center;
+    margin-top: 50px;
+}
+.agenciasLeft, .guiasLeft{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+.agenciasLeft h2, .guiasLeft h2{
+    font-size: 38pt;
+}
+.agenciasLeft p, .guiasLeft p{
+    text-align: center;
+    font-size: 15pt;
+    margin: 30px 0;
+}
+.agenciasButton, .guiasButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.agenciasButton button, .guiasButton button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 212);
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    width: 230px;
+    height: 80px;
+    border-radius: 90px;
+    border: none;
+}
+.agenciasButton button:last-child{
+    width: 350px;
+}
+.guiasButton button:last-child{
+    width: 300px;
+}
+.agenciasRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agenciasRight img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 320px;
+    border-bottom-left-radius: 320px;
+}
+.visaoFuturo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+    align-items: center;
+    justify-items: center;
+}
+.visaoFuturo img{
+    width: 100%;
+}
+.futuroTxt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    background-color: rgb(33, 128, 216);
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+.futuroTxt h1{
+    text-align: center;
+    font-size: 38pt;
+    line-height: 3.7rem;
+    color: white;
+    margin-bottom: 40px;
+}
+.futuroTxt p{
+    text-align: justify;
+    font-size: 13pt;
+    color: white;
+}
+.identidade{
+    text-align: end;
+    font-size: 50pt;
+    margin: 80px 140px 30px 0;
+}
+.arrowLeft{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 2rem;
+    transform: translateY(2rem);
+    transition-duration: .5s;
+}
+.arrowLeft:hover{
+    cursor: pointer;
+}
+.mumuilas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 7px;
+    overflow: hidden;
+    position: relative;
+}
+.mumuilas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mumuilas-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    padding: 30px 20px 0px 20px;
+    transform: translateY(-10%);
+    background: #f0e8e8;
+}
+.mumuilas-txt h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: 34pt;
+    font-family: 'Comfortaa';
+    margin-bottom: 10px;
+}
+.mumuilas-txt .line{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.mumuilas-txt .line .hr{
+    background-color: #ECC824;
+    color: #ECC824;
+    width: 100%;
+    height: 0.1rem;
+    border: none;
+    outline: none;
+}
+.mumuilas-txt svg{
+    font-size: 8pt;
+    color: #ECC824;
+}
+.mumuilas-txt p{
+    font-size: 14pt;
+    text-align: justify;
+    color: var(--color-text);
+}
+.mumuilas-a{
+    width: 100%;
+    margin-top: 15px;
+}
+.mumuilas-a a{
+    font-size: 14pt;
+    font-weight: 400;
+    color: #ECC824;
+    display: flex;
+    align-items: center;
+}
+.mumuilas-a a svg{
+    color: rgb(192, 192, 53);
+    margin-left: 10px;
+} /* Por se trabalhar "Usar um keyframe para fazer a seta fazer um vai e vem" .*/
+@media (min-width: 570px){
+    .story-img{
+        width: 450px;
+    }
+    .story-img :first-child{
+        width: 420px;
+        height: 550px;
+        box-shadow: 48px 55px 5px 1px #ca9c11;
+    }
+    .mumuilas-txt{ 
+        width: 85%;
+    }
+}
+@media (min-width: 685px){
+    .mumuilas{
+        display: grid;
+        grid-template-columns: 70% 50%;
+        justify-items: center;
+        margin-bottom: 100px;
+        position: relative;
+        padding: 0px 20px;
+    }
+    .mumuilas img{
+        height: 620px;
+    }
+    .mumuilas-txt{
+        height: 550px;
+        padding: 80px 75px 80px 44px;
+        transform: translateY(0);
+        position: absolute;
+        top: 2.7rem;
+        right: -2rem;
+    }
+    .mumuilas-txt .line{
+        width: 85%;
+    }
+    .mumuilas-txt p{
+        margin-top: 10px;
+        font-size: 12pt;
+    }
+    .mumuilas-a{
+        margin-top: 30px;
+    }
+}
+@media (min-width: 870px){
+    .mumuilas img{
+        width: 90%;
+        height: 700px;
+    }
+    .mumuilas-txt{
+        width: 65%;
+        height: 600px;
+        top: 3rem;
+        right: 2rem;
+    }
+    .mumuilas-txt h1{
+        font-size: 46pt;
+    }
+    .mumuilas-txt p{
+        font-size: 13pt;
+    }
+}
+@media (min-width: 1167px){
+    .mumuilas{
+        padding: 0px 80px;
+    }
+    .mumuilas img{
+        height: 780px;
+    }
+    .mumuilas-txt{
+        width: 50%;
+        height: 680px;
+        padding: 0 60px;
+        top: 3.5rem;
+        right: 5rem;
+    }
+    .mumuilas-txt h1{
+        font-size: 50pt;
+    }
+    .mumuilas-txt p{
+        font-size: 14pt;
+    }
+}
+.guias, .empresarios{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 780px;
+    align-items: center;
+    margin-top: 50px;
+}
+.guiasRight{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guiasRight img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 100%;
+}
+.empresarios{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 600px;
+    align-items: center;
+    margin-top: 50px;
+}
+.empresariosLeft{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empresariosLeft img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 320px;
+    border-bottom-right-radius: 320px;
+}
+.empresariosRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+.empresariosRight h2{
+    font-size: 38pt;
+    text-align: center;
+    line-height: 4rem;
+}
+.empresariosRight p{
+    text-align: center;
+    font-size: 15pt;
+    margin: 30px 0;
+}
+.empresariosButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.empresariosButton button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 212);
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    width: 340px;
+    height: 90px;
+    border-radius: 90px;
+    border: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 20px 0;
+    background-color: white;
+}
+.footerUp{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    width: 100%;
+}
+.footerUp a{
+    margin-right: 30px;
+    color: black;
+}
+.footerDown{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.end{
+    text-align: center;
+    font-size: 40pt;
+    margin: 30px 0;
+}
+
+
+
+
+
